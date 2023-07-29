@@ -1,11 +1,11 @@
-About antropy
-=============
+About antropy-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/antropy-feedstock/blob/main/LICENSE.txt)
 
 Home: https://raphaelvallat.com/antropy/build/html/index.html
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/antropy-feedstock/blob/main/LICENSE.txt)
 
 Summary: Entropy and complexity of (EEG) time-series data in Python
 
