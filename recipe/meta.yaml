@@ -16,10 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
+    - setuptools
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - numpy
     - scipy
     - scikit-learn
@@ -30,6 +31,7 @@ test:
   imports:
     - antropy
   requires:
+    - python {{ python_min }}
     - pip
   commands:
     - pip check
