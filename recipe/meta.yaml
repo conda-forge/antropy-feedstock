@@ -1,13 +1,13 @@
 {% set name = "antropy" %}
-{% set version = "0.1.6" %}
+{% set version = "0.1.8" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6c60923a2e805eb7d69bc8f29c9f61cac0cd30dfb632af30bd081076e9cd850f
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: f7ec1762ff58047531cfa3a68ac65fe333089cc0da81cfb7d9be6afd0629fac4
 
 build:
   noarch: python
@@ -16,10 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
+    - setuptools
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - numpy
     - scipy
     - scikit-learn
@@ -30,6 +31,7 @@ test:
   imports:
     - antropy
   requires:
+    - python {{ python_min }}
     - pip
   commands:
     - pip check
