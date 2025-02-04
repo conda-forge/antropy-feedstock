@@ -1,5 +1,5 @@
 {% set name = "antropy" %}
-{% set version = "0.1.8" %}
+{% set version = "0.1.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f7ec1762ff58047531cfa3a68ac65fe333089cc0da81cfb7d9be6afd0629fac4
+  sha256: 7c234464e065a566eaff4d367db31c0983ef669803ba7c4e35c74e1518adee21
 
 build:
   noarch: python
@@ -25,7 +25,6 @@ requirements:
     - scipy
     - scikit-learn
     - numba
-    - stochastic
 
 test:
   imports:
