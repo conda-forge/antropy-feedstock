@@ -1,5 +1,5 @@
 {% set name = "antropy" %}
-{% set version = "0.2.1" %}
+{% set version = "0.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 15cef5e3a5e35e484276932650565f6d733ca53fc05352366c2dadd3f7f3e474
+  sha256: 87a911b718a8e84e4998c6685c5939364c6970be851b974ef0216bcc6f5b7eb5
 
 build:
   noarch: python
