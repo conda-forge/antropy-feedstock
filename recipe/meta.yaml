@@ -1,13 +1,13 @@
 {% set name = "antropy" %}
-{% set version = "0.2.2" %}
+{% set version = "0.2.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 87a911b718a8e84e4998c6685c5939364c6970be851b974ef0216bcc6f5b7eb5
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 75827535384caa3a04d962d0a0808dcde6f84e8f8746c7df0d6a6b75e964aca8
 
 build:
   noarch: python
